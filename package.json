@@ -1,0 +1,16 @@
+{
+  "name": "strict-csv-json",
+  "version": "0.1.0",
+  "description": "CSV to JSON converter with precise line and column error reporting",
+  "private": true,
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "strict-csv-json": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "author": "omar-works12"
+}
