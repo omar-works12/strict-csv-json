@@ -76,7 +76,19 @@ The line and column always refer to the original input text, not the
 parsed field, so you can jump straight to the offending byte in your
 editor.
 
+## Development
+
+```sh
+npm test
+```
+
+Runs the parser and converter test suites with Node's built-in test
+runner (`node --test`) against the compiled output.
+
 ## Status
 
-Early skeleton. Parsing, serializing, and shape-mismatch errors work.
-See the roadmap for what's not built yet.
+Early skeleton. Parsing, serializing, and shape-mismatch errors work,
+and the parser's edge cases are covered by tests. See the roadmap for
+what's not built yet: custom delimiters and headerless CSV in the CLI,
+streaming for large files, `--delimiter`/`--pretty` flags, and
+publishing as a real package.
